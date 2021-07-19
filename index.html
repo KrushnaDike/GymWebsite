@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krushna Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        /* css reset */
+        body {
+            font-family: 'Lilita One', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/bg.jpg);
+        }
+
+        .left {
+            display: inline-block;
+            position: fixed;
+            left: 44px;
+            top: 20px;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .left div {
+            line-height: 30px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        .mid {
+            display: block;
+            width: 674px;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 44px;
+            top: 35px;
+            /* border: 2px solid yellow; */
+        }
+
+        .right .btn {
+            font-family: 'Lilita One', cursive;
+            padding: 4px 14px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .right .btn:hover {
+            color: red;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 301px 372px;
+            padding: 66px 66px;
+            width: 516px;
+            border-radius: 22px;
+        }
+
+        .form-group input {
+            display: block;
+            width: 306px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 3px auto;
+            padding: 3px 21px;
+            text-align: center;
+            font-family: 'Lilita One', cursive;
+            font-size: 20px;
+        }
+        .form-group input:hover {
+            background-color: rgb(236, 222, 222);
+        }
+        .container button{
+            display: block;
+            margin: 6px auto;
+            font-family: 'Lilita One', cursive;
+            padding: 4px 14px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 350px;
+        }
+        .container button:hover{
+            background-color: grey ;
+            border: 2px solid yellow;
+            border-radius: 10px;
+        }
+        .container:hover{
+            border: 2px solid red;
+            border-radius: 22px;
+        }
+        .container h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/gym.jpg" alt="gym.jpg reloading">
+            <div>Krushna Fitness</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Fitness Calculator</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Contact Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Mobile Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email Id">
+            </div>
+            <div class="btn">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
